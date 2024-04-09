@@ -30,9 +30,8 @@ p, h1, h2{
   padding: 20px;
   margin: 0;
   display: flex;
-  justify-content:space-evenly;
+  justify-content: space-evenly;
 }
-
 
 .navbar li {
   padding: 0 10px;
@@ -40,16 +39,19 @@ p, h1, h2{
 
 .navbar a {
   text-decoration: none;
-  color:#F2F2F2;
+  color: #F2F2F2;
+  padding: 1px 22px; 
+  margin: -2px; 
+  border: 1px solid transparent;
+  transition: background-color 0.2s, color 0.2s, border-color 0.2s;
 }
 
 .navbar ul li a:hover {
-  background-color:#8C0F26; 
-  color: #333; 
-  padding: 16px 22px; 
-  margin: -2px; 
-  border: 1px solid #333; 
+  background-color: #8C0F26;
+  color: #333;
+  border-color: #333;
 }
+
 h1 {
   text-align: left;
   padding-left: 20px;
@@ -235,12 +237,12 @@ height:100px;
 
 .content1 {
   background-color: #262626; 
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
   margin: 20px auto;
   padding: 20px;
   max-width: 800px;
-  border-radius: 15px; 
-  color: #fff; 
+  border-radius: 10px; 
+  color: #fff;
 }
 
 .about-section {
@@ -286,12 +288,12 @@ height:100px;
 }
 
 .skills-section {
-  padding: 20px;
-  background-color: #262626; 
-  border-radius: 10px; 
-  margin: 20px auto; 
+  padding: 39px;
+  background-color: #262626;
+  border-radius: 10px;
+  margin: 20px auto;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  max-width: 800px; 
+  max-width: 800px;
 }
 
 .skills-section h3 {
@@ -304,6 +306,7 @@ height:100px;
   list-style-type: none; 
   padding: 0; 
   text-align: center; 
+  color: #F2F2F2;
 }
 
 .skills-list li {
@@ -342,6 +345,13 @@ height:100px;
 
 .site-footer a:hover {
   text-decoration: underline;
+}
+.navbar a:hover,
+#contact-form button:hover,
+.gallery-item:hover img,
+.profile-pic img:hover,
+.site-footer a:hover {
+  cursor: pointer;
 }
 
 
